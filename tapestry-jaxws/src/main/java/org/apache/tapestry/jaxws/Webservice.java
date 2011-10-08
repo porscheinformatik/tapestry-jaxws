@@ -6,6 +6,9 @@ import java.util.List;
 
 import javax.xml.ws.handler.Handler;
 
+/**
+ * Value object for holding information to contribute to web service request handlers.
+ */
 public class Webservice
 {
 	private final Class<?> webserviceClass;
@@ -19,6 +22,14 @@ public class Webservice
 	@SuppressWarnings("rawtypes")
 	private final List<Handler> handlerChain;
 
+	/**
+	 * Construct a Webservice contribution
+	 * @param webserviceClass the class representing the web service aka service interface
+	 * @param service
+	 * @param name
+	 * @param urlPattern
+	 * @param handlerChain
+	 */
 	@SuppressWarnings("rawtypes")
 	public Webservice(Class<?> webserviceClass, Object service, String name, String urlPattern, Handler... handlerChain)
 	{

@@ -12,5 +12,27 @@
   		<artifactId>jaxws-api</artifactId>
   		<version>2.2.6</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.apache.tapestry</groupId>
+  		<artifactId>tapestry-core</artifactId>
+  		<version>5.2.6</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-api</artifactId>
+  		<version>1.6.2</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>servlet-api</artifactId>
+  		<version>2.5</version>
+  		<scope>provided</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.sun.xml.ws</groupId>
+  		<artifactId>jaxws-rt</artifactId>
+  		<version>2.2.6-promoted-b02</version>
+  		<optional>true</optional>
+  	</dependency>
   </dependencies>
 </project>
