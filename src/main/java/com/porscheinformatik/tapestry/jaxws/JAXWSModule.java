@@ -1,10 +1,10 @@
 package com.porscheinformatik.tapestry.jaxws;
 
 import com.porscheinformatik.tapestry.jaxws.internal.metro.MetroHttpServletRequestFilter;
-import org.apache.tapestry5.ioc.OrderedConfiguration;
+import org.apache.tapestry5.commons.OrderedConfiguration;
 import org.apache.tapestry5.ioc.ServiceBinder;
 import org.apache.tapestry5.ioc.annotations.InjectService;
-import org.apache.tapestry5.services.HttpServletRequestFilter;
+import org.apache.tapestry5.http.services.HttpServletRequestFilter;
 
 public class JAXWSModule
 {
