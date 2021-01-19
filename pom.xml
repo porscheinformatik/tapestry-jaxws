@@ -11,6 +11,9 @@
 		<developerConnection>scm:git:http://github.com/derkoe/tapestry-jaxws.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>javax.xml.ws</groupId>
@@ -59,6 +62,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
