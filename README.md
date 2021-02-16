@@ -29,6 +29,6 @@ The Webservice constructor takes the following parameters:
  
 ## Developer Info
 
-This project is built with Maven - to generate the jar run: mvn package 
+This project is built with Maven - to generate the jar run: `mvn package`
 
-Continuous builds are running on GitHub Actions: [![Build Status](https://github.com/derkoe/tapestry-jaxws/workflows/Build/badge.svg)](https://github.com/derkoe/tapestry-jaxws/actions)
+Continuous builds are running on GitHub Actions: [![Build Status](https://github.com/porscheinformatik/tapestry-jaxws/workflows/Build/badge.svg)](https://github.com/porscheinformatik/tapestry-jaxws/actions)
