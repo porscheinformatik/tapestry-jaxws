@@ -1,8 +1,9 @@
 package org.apache.tapestry.jaxws.testapp.services;
 
-import org.apache.tapestry.jaxws.JAXWSModule;
-import org.apache.tapestry.jaxws.Webservice;
-import org.apache.tapestry.jaxws.util.SOAPLoggingHandler;
+import com.porscheinformatik.tapestry.jaxws.JAXWSModule;
+import com.porscheinformatik.tapestry.jaxws.Webservice;
+import com.porscheinformatik.tapestry.jaxws.util.SOAPLoggingHandler;
+
 import org.apache.tapestry5.ioc.OrderedConfiguration;
 import org.apache.tapestry5.ioc.ServiceBinder;
 import org.apache.tapestry5.ioc.annotations.SubModule;
