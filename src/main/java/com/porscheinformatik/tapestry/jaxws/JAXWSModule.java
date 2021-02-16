@@ -1,6 +1,6 @@
-package org.apache.tapestry.jaxws;
+package com.porscheinformatik.tapestry.jaxws;
 
-import org.apache.tapestry.jaxws.internal.metro.MetroHttpServletRequestFilter;
+import com.porscheinformatik.tapestry.jaxws.internal.metro.MetroHttpServletRequestFilter;
 import org.apache.tapestry5.ioc.OrderedConfiguration;
 import org.apache.tapestry5.ioc.ServiceBinder;
 import org.apache.tapestry5.ioc.annotations.InjectService;

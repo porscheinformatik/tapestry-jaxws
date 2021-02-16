@@ -1,4 +1,4 @@
-package org.apache.tapestry.jaxws.internal.metro;
+package com.porscheinformatik.tapestry.jaxws.internal.metro;
 
 import java.net.MalformedURLException;
 import java.net.URL;
