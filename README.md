@@ -9,6 +9,16 @@ This Tapestry module provides integration of JAXWS to Tapestry web applications.
  * SOAPLoggingHandler for easy logging of requests/responses
 
 ## Usage
+
+Add the Maven dependency to your project (find the current version on [Maven Central](https://search.maven.org/search?q=g:com.porscheinformatik.tapestry.jaxws%20AND%20a:tapestry-jaxws)):
+
+```xml
+<dependency>
+  <groupId>com.porscheinformatik.tapestry.jaxws</groupId>
+  <artifactId>tapestry-jaxws</artifactId>
+  <version>${tapestry-jaxws.version}</version>
+</dependency>
+```
  
 You can easily add a contribution to the MetroHttpServletRequestFilter:
  

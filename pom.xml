@@ -3,6 +3,7 @@
 
 	<name>Tapestry JAX-WS Integration</name>
 	<description>Integrates JAX-WS web services with Apache Tapestry</description>
+	<url>https://github.com/porscheinformatik/tapestry-jaxws</url>
 
 	<organization>
 		<name>Porsche Informatik</name>
