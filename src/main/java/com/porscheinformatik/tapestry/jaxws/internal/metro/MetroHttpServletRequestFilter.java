@@ -1,4 +1,4 @@
-package org.apache.tapestry.jaxws.internal.metro;
+package com.porscheinformatik.tapestry.jaxws.internal.metro;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.ws.handler.Handler;
 
-import org.apache.tapestry.jaxws.Webservice;
-import org.apache.tapestry5.services.ApplicationGlobals;
-import org.apache.tapestry5.services.HttpServletRequestFilter;
-import org.apache.tapestry5.services.HttpServletRequestHandler;
+import com.porscheinformatik.tapestry.jaxws.Webservice;
+import org.apache.tapestry5.http.services.ApplicationGlobals;
+import org.apache.tapestry5.http.services.HttpServletRequestFilter;
+import org.apache.tapestry5.http.services.HttpServletRequestHandler;
 
 import com.sun.xml.ws.api.BindingID;
 import com.sun.xml.ws.api.WSBinding;

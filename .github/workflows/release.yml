@@ -1,23 +1,26 @@
-name: Build and Deploy
+name: Release
 
 on:
   push:
-    branches: [ master ]
+    tags: ["v.*"]
+  release:
+    types: [created]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup java
+      - name: Checkout project
+        uses: actions/checkout@v2
+      - name: Setup Java JDK
         uses: actions/setup-java@v1
         with:
           java-version: 8
           server-id: ossrh
           server-username: MAVEN_USERNAME
           server-password: MAVEN_PASSWORD
-      - name: Build with Maven
-        run: mvn -B verify
+      - name: Set Release Version
+        run: mvn -B versions:set -DnewVersion=${GITHUB_REF:11} -DgenerateBackupPoms=false
       - name: Decode GPG Keyring File
         run: |
           mkdir ~/.gnupg
@@ -25,7 +28,7 @@ jobs:
           echo "${{secrets.GPG_PRIVATE_KEY}}" > ~/.gnupg/gpg-key.asc
           gpg --no-tty --batch --yes --import ~/.gnupg/gpg-key.asc 
           rm ~/.gnupg/gpg-key.asc
-      - name: Deploy SNAPSHOT to Central
+      - name: Deploy to Maven Central
         run: mvn -B deploy -Possrh -Dgpg.passphrase="${{secrets.GPG_PASSPHRASE}}"
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}

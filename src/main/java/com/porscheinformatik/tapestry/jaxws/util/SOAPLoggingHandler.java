@@ -1,4 +1,4 @@
-package org.apache.tapestry.jaxws.util;
+package com.porscheinformatik.tapestry.jaxws.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintWriter;
